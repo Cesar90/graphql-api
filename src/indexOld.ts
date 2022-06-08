@@ -1,15 +1,11 @@
-require('dotenv').config()
-
 import { createServer } from "http";
 import express from "express";
 import { ApolloServer, gql } from "apollo-server-express";
 import {
   ApolloServerPluginLandingPageGraphQLPlayground
 } from "apollo-server-core";
-import { connectDatabase } from './database'
 
 const startServer = async () => {
-  const db = await connectDatabase()
   const app = express()
   const httpServer = createServer(app)
 
