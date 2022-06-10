@@ -1,9 +1,6 @@
 import { createServer } from "http";
 import express from "express";
 import { ApolloServer, gql } from "apollo-server-express";
-// import {
-//   ApolloServerPluginLandingPageGraphQLPlayground
-// } from "apollo-server-core";
 import dotenv from 'dotenv'
 dotenv.config()
 import { connectDatabase } from './database'

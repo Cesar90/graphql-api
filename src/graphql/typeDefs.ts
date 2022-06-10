@@ -13,8 +13,19 @@ export const typeDefs = gql`
     rating: Float!
   }
 
+  type Product {
+    id: ID!
+    name: String!
+    description: String!
+    image: String!
+    quantity: Int!
+    price: Float!
+    onSale: Boolean
+  }
+
   type Query {
     listings: [Listing!]!
+    products: [Product!]!
   }
 
   type Mutation {

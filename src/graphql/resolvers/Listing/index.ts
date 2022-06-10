@@ -29,5 +29,4 @@ export const listingResolvers = {
     Listing: {
         id: (listing: Listing) => listing._id.toString()
     }
-
 }
